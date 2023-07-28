@@ -1,39 +1,80 @@
-
-
-let data1="localhost:3001/get_data"
+//let car_data = data;
+//volovo
+let data1= "http://127.0.0.1:5000/get_car_data"
 d3.json(data1).then((data) => {
-  console.log(data)
+console.log(data)
+var bar_data = [{
+  type: 'bar',
+  x: [20, 14, 23, 25],
+  y: ['NISSAN', 'JEEP', 'VOLVO','TESLA'],
+  orientation: 'h'
+}];
+
+Plotly.newPlot('bar', bar_data);
+
 });
-  // function(d){
-  //   console.log(data)=>
-  //   // document.getElementById("d3-write-here").innerHTML = d;
-  // });
+//NISSAN
+let dataN= "http://127.0.0.1:5000/get_data"
+d3.json(dataN).then((data) => {
+console.log(data)
+var bar_data = [{
+  type: 'bar',
+  x: [20, 14, 23, 25],
+  y: ['NISSAN', 'JEEP', 'VOLVO','TESLA'],
+  orientation: 'h'
+}];
 
-//  function myCar(vars){
-//   return vars
-//  }
+Plotly.newPlot('bar', bar_data);
 
-  
-// function metaTable(sample) {
-//     //  git the url from api 
-//     d3.json("http/localhost:5000/electric_cars").then((data) => {
-//       console.log(data)
-//       let metadata = data.metadata;
-//       console.log(metadata);
-//       let metaArry = metadata.filter(sampleObj => sampleObj.id == sample)
-//       let metaResult = metaArry[0]
-  
-//       let metaTableData = d3.select("#sample-metadata")
-//       metaTableData.html("")
-//       for (key in metaResult) {
-//         metaTableData.append('h6').text(`${key.toUpperCase()}: ${metaResult[key]}`)
-//       }
-//     })
-//   }
+});
 
-// // get how many cars
-// car.length;
-// ///loob and print ou all the prices of cars
+//Tesla
+let tesla= "http://127.0.0.1:5000/get_car_car"
+d3.json(tesla).then((data) => {
+console.log(data)
+var bar_data = [{
+  type: 'bar',
+  x: [20, 14, 23, 25],
+  y: ['NISSAN', 'JEEP', 'VOLVO','TESLA'],
+  orientation: 'h'
+}];
+
+Plotly.newPlot('bar', bar_data);
+
+});
+///JEEP
+let data= "http://127.0.0.1:5000/get_car"
+d3.json(data).then((data) => {
+console.log(data)
+var bar_data = [{
+  type: 'bar',
+  x: [20, 14, 23, 25],
+  y: ['NISSAN', 'JEEP', 'VOLVO','TESLA'],
+  orientation: 'h'
+}];
+
+Plotly.newPlot('bar', bar_data);
+
+});
+
+// car_type
+let dataType= "http://127.0.0.1:5000/get_car_type"
+d3.json(dataType).then((data) => {
+console.log(data)
+var bar_data = [{
+  type: 'bar',
+  x: [20, 14, 23, 25],
+  y: ['NISSAN', 'JEEP', 'VOLVO','TESLA'],
+  orientation: 'h'
+}];
+
+Plotly.newPlot('bar', bar_data);
+
+});
+
+
+
+
     
    
     
