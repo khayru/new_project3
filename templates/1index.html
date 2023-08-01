@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falsk</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript"{{ url_for('static', filename='js/car.js')}}></script>
+    
+    <script type="text/javascript"{{ url_for('static', filename='js/car.js')}}></script> 
+</head>
+    <body>
+        <h1>Electric Vehicle</h1>
+        
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+           <p>Use the interactive charts below to explore the dataset</p>
+          </div>
+         <div>{{data |safe}}</div>
+        <!--<div> id = "bar"</div>-->
+       
+        <!--<script> src = "car.js"</script>-->
+        <script type="text/javascript" src="static/js/car.js"></script>
+        <div id ='bar'> </div>
+        <!--<select id = 'selDataset' onchange-->
+         <select name="cars" id="cars" >
+            <option value="volvo">Volvo</option>
+            <option value="Jeep">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option> 
+        </select>
+
+    </body>
+       
+
+
+
+</html>
